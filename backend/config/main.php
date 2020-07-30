@@ -17,6 +17,12 @@ return [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
+        'redis' => [
+            'class' => 'yii\redis\Connection',
+            'hostname' => 'localhost',
+            'port' => 6379,
+            'database' => 0,
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -25,6 +31,7 @@ return [
         'session' => [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
+            'class' => 'yii\web\DbSession',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
