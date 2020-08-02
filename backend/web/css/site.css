@@ -10,7 +10,7 @@ body {
     padding: 0 0 60px;
 }
 
-.wrap > .container {
+.wrap > .container-fluid {
     padding: 70px 15px 20px;
 }
 
@@ -118,4 +118,40 @@ a.desc:after {
 
 .nav > li > form > button.logout:focus {
     outline: none;
+}
+
+.navbar-inverse {
+    background-color: #656565;
+}
+
+.sidebar-left-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-left-menu > li {
+    position: relative;
+    margin: 1px 0;
+    padding: 0;
+    background-color: #656565;
+    border-radius: 3px;
+}
+
+.sidebar-left-menu > li > a {
+    position: relative;
+    display: block;
+    border-left: 3px solid transparent;
+    padding: 12px 5px 12px 15px;
+    color: #ffffff;
+}
+.sidebar-left-menu > li:hover > a,
+.sidebar-left-menu > li.active > a,
+.sidebar-left-menu > li.menu-open > a {
+    color: #ffffff;
+    background: #337ab7;
+    text-decoration: none;
+}
+.sidebar-left-menu > li.active > a {
+    border-left-color: #3c8dbc;
 }
